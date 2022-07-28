@@ -17,8 +17,8 @@ load_clf = joblib.load(PATH+r"trained_model_sample_.joblib")
 def index():
     return 'Welcome to my Flask API!'
 
-#C
-@app.route('/credit/<id_client>')
+#ID 
+@app.route('/credit/<id_client>', methods=['GET'])
 def credit(id_client):
     print('id client = ', id_client)
 
