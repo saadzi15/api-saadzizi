@@ -6,11 +6,11 @@ app = Flask(__name__)
 
 PATH = ''
 
-df = pd.read_csv(https://raw.githubusercontent.com/saadzi15/api-saadzizi/main/test_df_2.csv)
+df = pd.read_csv(PATH+'test_df_2.csv')
 print('df shape = ', df.shape)
 
 #Chargement du modèle
-load_clf = joblib.load(https://raw.githubusercontent.com/saadzi15/api-saadzizi/main/trained_model_sample_.joblib)
+load_clf = joblib.load(PATH+'trained_model_sample_.joblib')
 
 #ID 
 @app.route('/credit/<id_client>', methods=['GET'])
