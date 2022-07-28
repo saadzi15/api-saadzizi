@@ -4,7 +4,7 @@ import joblib
 
 app = Flask(__name__)
 
-PATH = r'C:\Users\nha5600\Desktop\BUREAU\FORMATION\Suite\P7\Predictions\\'
+PATH = ''
 
 df = pd.read_csv(PATH+'test_df_2.csv')
 print('df shape = ', df.shape)
