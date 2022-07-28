@@ -4,7 +4,7 @@ import joblib
 
 app = Flask(__name__)
 
-PATH = 'api-saadzizi//'
+PATH = ''
 
 df = pd.read_csv(PATH+'test_df_2.csv')
 print('df shape = ', df.shape)
