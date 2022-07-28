@@ -6,7 +6,6 @@ app = Flask(__name__)
 
 
 df = pd.read_csv('https://raw.githubusercontent.com/saadzi15/api-saadzizi/main/test_df_2.csv')
-print('df shape = ', df.shape)
 
 #Chargement du modèle
 load_clf = joblib.load('https://raw.githubusercontent.com/saadzi15/api-saadzizi/main/trained_model_sample_.joblib')
