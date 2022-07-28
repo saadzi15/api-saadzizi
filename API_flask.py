@@ -9,7 +9,7 @@ PATH = ''
 df = pd.read_csv(PATH+'test_df_2.csv')
 
 #Chargement du modèle
-load_clf = joblib.load(PATH+"trained_model_sample_.joblib"')
+load_clf = joblib.load(PATH+"trained_model_sample_.joblib")
 
 #ID 
 @app.route('/credit/<id_client>', methods=['GET'])
