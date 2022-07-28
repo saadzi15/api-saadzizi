@@ -1,1 +1,1 @@
-web: gunicorn --timeout 10 API_flask:app
+gunicorn --bind 0.0.0.0:$PORT API_flask:app
