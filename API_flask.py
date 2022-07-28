@@ -24,7 +24,6 @@ def credit(id_client):
     ignore_features = ['Unnamed: 0', 'SK_ID_CURR', 'INDEX', 'TARGET']
     relevant_features = [col for col in df.columns if col not in ignore_features]
     X = X[relevant_features]
-    print('X shape = ', X.shape)
 
 #Prédiction
     proba = load_clf.predict_proba(X)
