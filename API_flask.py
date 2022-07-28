@@ -12,11 +12,6 @@ print('df shape = ', df.shape)
 #Chargement du modèle
 load_clf = joblib.load(PATH+r"trained_model_sample_.joblib")
 
-#Premiers pas sur l'API
-@app.route('/')
-def index():
-    return 'Welcome to my Flask API!'
-
 #ID 
 @app.route('/credit/<id_client>', methods=['GET'])
 def credit(id_client):
